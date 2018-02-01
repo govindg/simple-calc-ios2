@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     var avgints : [Int] = []
     var countints : [Int] = []
     var avgCheck: Bool = false
+    var countCheck: Bool = false
     var calculated: Bool = false
     
     override func viewDidLoad() {
@@ -59,6 +60,7 @@ class ViewController: UIViewController {
     
     @IBAction func equalsPushed(_ sender: UIButton) {
         if avgCheck {
+            avgints.append(Int(text)!)
             var sum : Int = 0
             for i in avgints {
                 sum += i
@@ -69,21 +71,27 @@ class ViewController: UIViewController {
             avgints = []
             avgCheck = false
         } else if countCheck {
+            countints.append(Int(text)!)
             let result : Int = countints.count
             screenText!.text = String(result)
             text = screenText!.text!
             countints = []
             countCheck = false
+        } else {
+            let result : Int = calculate(text)
+            screenText!.text = String(result)
+            text = screenText!.text!
         }
-        let result : Int = calculate(text)
-        screenText!.text = String(result)
-        text = screenText!.text!
         calculated = true
     }
     
     @IBAction func clearPushed(_ sender: UIButton) {
-        screenText!.text = nil
+        screenText!.text = ""
         text = ""
+        countCheck = false
+        avgCheck = false
+        countints = []
+        avgints = []
     }
     
     @IBAction func factPushed(_ sender: UIButton) {
@@ -111,15 +119,18 @@ class ViewController: UIViewController {
         } else {
             avgints.append(Int(text)!)
         }
+        calculated = true
     }
     
     @IBAction func countPushed(_ sender: UIButton) {
+        countCheck = true
         if text.split(separator: " ").count > 1 {
             screenText!.text = "Invalid"
             text = screenText!.text!
         } else {
             countints.append(Int(text)!)
         }
+        calculated = true
     }
     
     public func calculate(_ arg: String) -> Int {

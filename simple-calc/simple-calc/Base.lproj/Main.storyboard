@@ -184,7 +184,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-MM-Fbv">
-                                <rect key="frame" x="201" y="425" width="59" height="58"/>
+                                <rect key="frame" x="195" y="425" width="65" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="=">
@@ -195,7 +195,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1M-rj-tH5">
-                                <rect key="frame" x="52" y="425" width="59" height="58"/>
+                                <rect key="frame" x="52" y="425" width="62" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="clear">
@@ -203,11 +203,10 @@
                                 </state>
                                 <connections>
                                     <action selector="clearPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLA-5m-k2a"/>
-                                    <action selector="equalsPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzm-x8-7h0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpp-5E-eal">
-                                <rect key="frame" x="52" y="491" width="59" height="58"/>
+                                <rect key="frame" x="52" y="491" width="62" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="fact">
@@ -218,15 +217,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDt-yh-uqX">
-                                <rect key="frame" x="125" y="491" width="59" height="58"/>
+                                <rect key="frame" x="122" y="491" width="65" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="avg">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LK3-9I-gok"/>
-                                    <action selector="equalsPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwo-Gc-LkN"/>
+                                    <action selector="avgPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htQ-hv-KI6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9g-bw-z5j">
@@ -237,15 +235,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-xm-eNg">
-                                <rect key="frame" x="201" y="491" width="59" height="58"/>
+                                <rect key="frame" x="195" y="491" width="65" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="count">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vl7-Hl-Yds"/>
-                                    <action selector="equalsPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELb-K8-BK2"/>
+                                    <action selector="countPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edt-8p-MbZ"/>
                                 </connections>
                             </button>
                         </subviews>
