@@ -10,26 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var count: UIButton!
-    @IBOutlet weak var avg: UIButton!
-    @IBOutlet weak var fact: UIButton!
     @IBOutlet weak var screenText: UILabel!
-    @IBOutlet weak var modulus: UIButton!
-    @IBOutlet weak var divide: UIButton!
-    @IBOutlet weak var multiply: UIButton!
-    @IBOutlet weak var subtract: UIButton!
-    @IBOutlet weak var add: UIButton!
-    @IBOutlet weak var equals: UIButton!
-    @IBOutlet weak var zero: UIButton!
-    @IBOutlet weak var one: UIButton!
-    @IBOutlet weak var two: UIButton!
-    @IBOutlet weak var three: UIButton!
-    @IBOutlet weak var four: UIButton!
-    @IBOutlet weak var five: UIButton!
-    @IBOutlet weak var six: UIButton!
-    @IBOutlet weak var seven: UIButton!
-    @IBOutlet weak var eight: UIButton!
-    @IBOutlet weak var nine: UIButton!
     var text: String = ""
     var avgints : [Int] = []
     var countints : [Int] = []
